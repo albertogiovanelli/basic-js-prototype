@@ -8,7 +8,8 @@
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\"",
     "format": "npm run prettier -- --write",
     "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
-    "flow": "flow"
+    "flow": "flow",
+    "precommit": "npm run validate"
   },
   "author": "",
   "license": "ISC",
