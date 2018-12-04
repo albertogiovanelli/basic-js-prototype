@@ -1,0 +1,25 @@
+{
+  "name": "eslinttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\"",
+    "format": "npm run prettier -- --write",
+    "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
+    "flow": "flow"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint-config-prettier": "^3.3.0",
+    "flow-bin": "^0.87.0",
+    "husky": "^1.2.0",
+    "prettier": "^1.15.3"
+  }
+}
