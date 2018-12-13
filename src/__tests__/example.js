@@ -1,2 +1,2 @@
 // eslint-disable-next-line no-undef
-test('it works', () => {})
+test('it works', () => {});
